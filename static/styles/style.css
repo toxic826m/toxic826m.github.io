@@ -105,3 +105,13 @@ body.dark-theme section:hover {
 body.dark-theme .theme-toggle i {
     transform: rotate(180deg);
 }
+
+.theme-toggle:hover {
+    animation: pulse 0.6s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
