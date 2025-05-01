@@ -97,3 +97,11 @@ body.dark-theme section {
 body.dark-theme section:hover {
     box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2); /* Reddish glow on hover */
 }
+
+.theme-toggle i {
+    transition: transform 0.4s ease;
+}
+
+body.dark-theme .theme-toggle i {
+    transform: rotate(180deg);
+}
