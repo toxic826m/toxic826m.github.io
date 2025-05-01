@@ -46,21 +46,19 @@
     </main>
 
 	<script>
-        const toggle = document.getElementById('theme-toggle');
-        const icon = toggle.querySelector('i');
+    const toggle = document.getElementById('theme-toggle');
+    const icon = toggle.querySelector('i');
 
-        toggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-
-            // Toggle the icon
-            if (document.body.classList.contains('dark-theme')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-        });
-    </script>
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        
+        // Switch icon class
+        if (document.body.classList.contains('dark-theme')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+        }
+    });
+</script>
 </body>
 </html>
