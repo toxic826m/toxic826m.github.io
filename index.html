@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hafizur Rahman Supto - Portfolio</title>
+    <link rel="stylesheet" href="static/styles/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/> 
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    <header>
+        <div class="container">
+            <img src="static/images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+            <h1>Hafizur Rahman Supto</h1>
+            <p class="title">Programmer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate programmer skilled in HTML, CSS, Python, and C# for .NET applications. I enjoy learning new technologies and building creative solutions.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C# (.NET Applications)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bot826a@gmail.com">bot826a@gmail.com</a></p>
+            <p>Location: Pabna, Rajshahi, Bangladesh</p>
+            <p>GitHub: <a href="https://github.com/toxic826" target="_blank">toxic826</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/supto826m" target="_blank">supto826m</a></p>
+        </section>
+    </main>
+
+	<script>
+        const toggle = document.getElementById('theme-toggle');
+        const icon = toggle.querySelector('i');
+
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+
+            // Toggle the icon
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
+</body>
+</html>

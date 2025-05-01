@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    font-family: 'Oswald', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: gray;
+}
+
+body.dark-theme {
+    background-color: black;
+    color: red;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 5px 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Light grey border for elegance */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-theme section {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444; /* Darker border to match dark background */
+}
