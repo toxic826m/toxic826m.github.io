@@ -79,12 +79,21 @@ section {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc; /* Light grey border for elegance */
-    transition: background-color 0.3s, border-color 0.3s;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    box-shadow: none; /* No shadow by default */
+}
+
+section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
 }
 
 body.dark-theme section {
     background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid #444; /* Darker border to match dark background */
+    border: 1px solid #444;
+    box-shadow: none;
+}
+
+body.dark-theme section:hover {
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2); /* Reddish glow on hover */
 }
